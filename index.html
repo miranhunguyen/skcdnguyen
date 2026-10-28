@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tư vấn Sức khỏe Chủ động &amp; Y học Lối sống | Chăm sóc sức khỏe từ gốc</title>
+  <meta name="description" content="Nền tảng Tư vấn Sức khỏe Chủ động &amp; Y học Lối sống (Preventive Healthcare &amp; Lifestyle Medicine). Đồng hành cá nhân hóa dinh dưỡng, vận động, giấc ngủ sinh học và hydrat hóa tế bào." />
+  <meta name="keywords" content="Tư vấn sức khỏe chủ động, Y học lối sống, Lifestyle Medicine, Dinh dưỡng cân bằng, Vận động kháng lực, Pilates, Giấc ngủ sinh học, Hydrat hóa tế bào" />
+  <meta name="author" content="BS. Nguyễn Thị Như Nguyện" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:title" content="Tư vấn Sức khỏe Chủ động &amp; Y học Lối sống" />
+  <meta property="og:description" content="Chăm sóc sức khỏe từ gốc – Kiến tạo lối sống khoa học mỗi ngày qua 6 trụ cột Y học Lối sống." />
+
+  <!-- Google Fonts: Be Vietnam Pro & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet chính -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Bỏ qua điều hướng để tới nội dung chính</a>
+
+  <!-- Thanh thông báo vị trí giữ chỗ cấu hình nhanh -->
+  <div class="top-notice" role="region" aria-label="Thông tin định vị thương hiệu">
+    <div class="container top-notice-inner">
+      <div>
+        <span class="top-notice-tag">Y HỌC LỐI SỐNG CHUẨN KHOA HỌC</span>
+        <span style="margin-left: 8px;" data-config="tagline">Chăm sóc sức khỏe từ gốc – Kiến tạo lối sống khoa học mỗi ngày</span>
+      </div>
+      <div>
+        <span>Hotline / Zalo: <strong data-config="zaloPhone">0911011355</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER CỐ ĐỊNH (STICKY HEADER) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Trang chủ thương hiệu">
+        <div class="brand-logo-mark" title="[LOGO]">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
+            <path d="M12 12 2.1 10.5"/>
+            <path d="m12 12 7.5 6.5"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name" data-config="brandName">Sống Khỏe Chủ Động Cùng BS. Như Nguyện</span>
+          <span class="brand-sub">Y học Lối sống &amp; Sức khỏe Chủ động</span>
+        </div>
+      </a>
+
+      <!-- Menu Điều hướng Desktop -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Trang chủ</a></li>
+          <li><a href="#pillars" class="nav-link">6 Trụ cột Sống khỏe</a></li>
+          <li><a href="#services" class="nav-link">Dịch vụ Tư vấn</a></li>
+          <li><a href="#articles" class="nav-link">Góc Chuyên môn</a></li>
+          <li><a href="#about" class="nav-link">Người đồng hành</a></li>
+          <li><a href="#activities" class="nav-link">Hình ảnh Hoạt động</a></li>
+          <li><a href="#faq" class="nav-link">Hỏi đáp (FAQ)</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nút hành động trên Header -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-zalo btn-sm" data-open-zalo="Tư vấn Sức khỏe Chủ động tổng quát">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Kết nối Zalo</span>
+        </button>
+        <button type="button" id="mobileMenuToggleBtn" class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobileNavDrawer" aria-label="Mở menu điều hướng trên điện thoại">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Ngăn kéo Menu trên Điện thoại (Mobile Drawer) -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer" role="navigation" aria-label="Menu di động">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Trang chủ</a></li>
+        <li><a href="#pillars" class="mobile-nav-link">6 Trụ cột Sống khỏe</a></li>
+        <li><a href="#services" class="mobile-nav-link">Dịch vụ Tư vấn</a></li>
+        <li><a href="#articles" class="mobile-nav-link">Góc Chuyên môn</a></li>
+        <li><a href="#about" class="mobile-nav-link">Người đồng hành</a></li>
+        <li><a href="#activities" class="mobile-nav-link">Hình ảnh Hoạt động</a></li>
+        <li><a href="#quick-check" class="mobile-nav-link">Tự khảo sát nhanh</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Hỏi đáp (FAQ)</a></li>
+      </ul>
+      <button type="button" class="btn btn-zalo" style="width: 100%;" data-open-zalo="Đặt lịch tư vấn từ Menu di động">
+        Kết nối tư vấn qua Zalo ngay
+      </button>
+    </div>
+  </header>
+
+  <!-- NỘI DUNG CHÍNH -->
+  <main id="mainContent">
+    <!-- MÀN HÌNH ĐẦU (HERO SECTION) -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Nền tảng Y học Lối sống &amp; Sức khỏe Chủ động</span>
+          </div>
+          <h1 class="hero-title">Làm chủ sức khỏe từ gốc qua điều chỉnh lối sống khoa học mỗi ngày</h1>
+          <p class="hero-tagline" data-config="tagline">Chăm sóc sức khỏe từ gốc – Kiến tạo lối sống khoa học mỗi ngày</p>
+          <p class="hero-desc">
+            Đồng hành cùng người trưởng thành, người làm việc văn phòng và các gia đình xây dựng nền tảng thể lực bền vững: 
+            <strong>Cá nhân hóa dinh dưỡng cân bằng, vận động kháng lực &amp; Pilates an toàn, tối ưu giấc ngủ theo nhịp sinh học và hydrat hóa tế bào đúng sinh lý.</strong>
+          </p>
+
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-zalo btn-lg" data-open-zalo="Đăng ký tư vấn Sức khỏe Chủ động 1:1">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>Kết nối tư vấn qua Zalo ngay</span>
+            </button>
+            <a href="#articles" class="btn btn-outline btn-lg">
+              <span>Đọc bài viết chuyên môn</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="hero-trust-item">
+              <span class="hero-trust-icon">✓</span>
+              <span>Dựa trên Y học Chứng cứ &amp; Sinh lý học</span>
+            </div>
+            <div class="hero-trust-item">
+              <span class="hero-trust-icon">✓</span>
+              <span>Cá nhân hóa theo nhịp sống thực tế</span>
+            </div>
+            <div class="hero-trust-item">
+              <span class="hero-trust-icon">✓</span>
+              <span>Đồng hành tận tâm, tôn trọng y đức</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khung trực quan tương tác nhanh 6 Trụ cột Y học Lối sống -->
+        <aside class="hero-visual-card" aria-label="Bảng tương tác nhanh 6 Trụ cột Y học Lối sống">
+          <div class="hero-visual-header">
+            <h2 class="hero-visual-title">6 Trụ cột Y học Lối sống</h2>
+            <span class="hero-visual-tag">Bấm từng thẻ để xem cơ chế</span>
+          </div>
+          <div id="heroMiniPillarsGrid" class="hero-mini-pillars">
+            <!-- Được sinh tự động bởi main.js -->
+          </div>
+          <div id="heroMiniPillarDetail" class="hero-mini-detail-box" aria-live="polite">
+            <!-- Hiển thị cơ chế sinh lý của trụ cột đang chọn -->
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- MỤC 1: 6 TRỤ CỘT Y HỌC LỐI SỐNG (#pillars) -->
+    <section id="pillars" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">NỀN TẢNG KHOA HỌC</span>
+          <h2 class="section-title">6 Trụ cột Y học Lối sống Kiến tạo Sức khỏe Bền vững</h2>
+          <p class="section-subtitle">
+            Mỗi thói quen hàng ngày đều tác động trực tiếp đến hệ nội tiết, chuyển hóa năng lượng và khả năng tự phục hồi của tế bào.
+          </p>
+        </div>
+
+        <div id="pillarsGrid" class="pillars-grid">
+          <!-- Được render từ dữ liệu chuẩn trong main.js / content.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MỤC 2: DỊCH VỤ & CHƯƠNG TRÌNH ĐỒNG HÀNH TƯ VẤN (#services) -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">CHƯƠNG TRÌNH ĐỒNG HÀNH</span>
+          <h2 class="section-title">Dịch vụ Tư vấn Sức khỏe Chủ động &amp; Thiết kế Lối sống</h2>
+          <p class="section-subtitle">
+            Các lộ trình được thiết kế linh hoạt, bám sát thể trạng và quỹ thời gian thực tế của bạn.
+          </p>
+        </div>
+
+        <div id="servicesGrid" class="services-grid">
+          <!-- Render tự động 4 chương trình tư vấn mẫu -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MỤC 3: GÓC CHUYÊN MÔN & BÀI VIẾT Y HỌC THƯỜNG THỨC (#articles) -->
+    <section id="articles" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">THƯ VIỆN KIẾN THỨC CHUẨN Y KHOA</span>
+          <h2 class="section-title">Góc Chuyên môn &amp; Bài viết Y học Lối sống</h2>
+          <p class="section-subtitle">
+            Hệ thống bài viết giải thích sâu sắc cơ chế sinh lý học bằng ngôn từ mộc mạc, dễ hiểu để bạn chủ động áp dụng cho bản thân và gia đình.
+          </p>
+        </div>
+
+        <!-- Thanh công cụ Tìm kiếm & Lọc danh mục -->
+        <div class="articles-controls" role="search" aria-label="Tìm kiếm và lọc bài viết chuyên môn">
+          <div class="search-input-wrap">
+            <span class="search-input-icon" aria-hidden="true">🔍</span>
+            <input
+              type="search"
+              id="articleSearchInput"
+              class="search-input"
+              placeholder="Tìm theo từ khóa (VD: uống nước, kháng lực, GLUT4, giấc ngủ, đạm...)"
+              aria-label="Tìm kiếm bài viết theo từ khóa"
+            />
+          </div>
+
+          <div class="category-filter-list" role="group" aria-label="Lọc bài viết theo chủ đề">
+            <button type="button" class="filter-btn is-active" data-category="Tất cả">Tất cả</button>
+            <button type="button" class="filter-btn" data-category="Dinh dưỡng">Dinh dưỡng</button>
+            <button type="button" class="filter-btn" data-category="Vận động">Vận động</button>
+            <button type="button" class="filter-btn" data-category="Giấc ngủ & Nước">Giấc ngủ &amp; Nước</button>
+            <button type="button" class="filter-btn" data-category="Phòng ngừa chủ động">Phòng ngừa chủ động</button>
+          </div>
+        </div>
+
+        <div class="articles-status-bar">
+          <span id="articlesResultCount" aria-live="polite">Hiển thị 6 / 6 bài viết chuyên môn</span>
+          <span>Bấm vào từng bài để mở cửa sổ đọc toàn văn &amp; in PDF</span>
+        </div>
+
+        <div id="articlesGrid" class="articles-grid">
+          <!-- Render danh sách 6+ bài viết chuyên môn -->
+        </div>
+
+        <!-- Trạng thái không tìm thấy bài viết phù hợp -->
+        <div id="articlesEmptyState" class="empty-state-box" style="display: none;">
+          <h3 style="margin-bottom: 8px;">Không tìm thấy bài viết phù hợp với từ khóa của bạn</h3>
+          <p style="color: var(--text-muted); margin-bottom: 18px;">
+            Bạn hãy thử tìm bằng một từ khóa khác hoặc bấm nút bên dưới để xem lại toàn bộ thư viện bài viết chuyên môn.
+          </p>
+          <button type="button" id="resetArticleFilterBtn" class="btn btn-outline">
+            Đặt lại bộ lọc bài viết
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MỤC 4: GIỚI THIỆU NGƯỜI ĐỒNG HÀNH (#about) -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">NGƯỜI ĐỒNG HÀNH CÙNG BẠN</span>
+          <h2 class="section-title">Tận tâm Chia sẻ Kiến thức Sức khỏe Dựa trên Bằng chứng Khoa học</h2>
+          <p class="section-subtitle">
+            Chia sẻ kiến thức y học thường thức gần gũi, dễ hiểu và đồng hành cùng bạn xây dựng những thói quen lành mạnh, bền vững mỗi ngày.
+          </p>
+        </div>
+
+        <div class="about-wrapper">
+          <div class="about-controls-bar">
+            <button type="button" id="togglePortraitBtn" class="toggle-portrait-btn">
+              Ẩn khung ảnh chân dung mẫu
+            </button>
+          </div>
+
+          <div id="aboutGridContainer" class="about-grid">
+            <!-- Khung đặt ảnh chân dung chuyên gia -->
+            <div id="specialistPortraitContainer" class="about-portrait-frame">
+              <img src="./assets/images/chan-dung-bs-nhu-nguyen-cdyt-hue.jpg" alt="Chân dung BS. Nguyễn Thị Như Nguyện" class="portrait-real-img" loading="lazy" />
+              <span class="portrait-placeholder-label">BS. Nguyễn Thị Như Nguyện</span>
+              <p class="portrait-helper-note">
+                Kỷ niệm những năm tháng giảng dạy tại Trường Cao đẳng Y tế Huế
+              </p>
+            </div>
+
+            <!-- Thông tin giới thiệu & Triết lý nghề nghiệp -->
+            <div>
+              <span class="about-role-tag" data-config="specialistRole">Bác sĩ đồng hành Tư vấn Sức khỏe Chủ động &amp; Lối sống Khoa học</span>
+              <h3 class="about-name" data-config="specialistName">BS. Nguyễn Thị Như Nguyện</h3>
+
+              <blockquote class="about-philosophy">
+                "Y học hiện đại cứu sống người bệnh trong những thời khắc nguy cấp, còn Y học Lối sống giúp mỗi người tự bảo vệ mình mỗi ngày thông qua từng bữa ăn, giấc ngủ, ngụm nước và bước chân vận động có ý thức."
+              </blockquote>
+
+              <p style="color: var(--text-muted); margin-bottom: 16px;">
+                Sau nhiều năm gắn bó với giảng đường Trường Cao đẳng Y tế Huế, niềm vui mỗi ngày của mình khi nghỉ hưu là tự rèn luyện thể lực và đem những kiến thức sinh lý học cơ thể người chia sẻ lại thật mộc mạc, gần gũi để mọi người cùng chủ động chăm sóc sức khỏe, nói không với các mẹo truyền miệng thiếu căn cứ hay chế độ ép cân cực đoan.
+              </p>
+
+              <div class="core-values-grid">
+                <div class="core-value-item">
+                  <div class="core-value-title">1. Khoa học &amp; Chuẩn mực</div>
+                  <div class="core-value-desc">Mọi giải pháp đều dựa trên cơ chế sinh lý học tế bào, nội tiết và chuyển hóa rõ ràng.</div>
+                </div>
+                <div class="core-value-item">
+                  <div class="core-value-title">2. Tận tâm &amp; Lắng nghe</div>
+                  <div class="core-value-desc">Thấu hiểu bối cảnh công việc, gia đình và thói quen riêng của từng học viên/khách hàng.</div>
+                </div>
+                <div class="core-value-item">
+                  <div class="core-value-title">3. Cá nhân hóa Thực tế</div>
+                  <div class="core-value-desc">Không áp đặt khuôn mẫu cứng nhắc; điều chỉnh linh hoạt theo thể trạng và tuổi tác.</div>
+                </div>
+                <div class="core-value-item">
+                  <div class="core-value-title">4. Bền vững Trọn đời</div>
+                  <div class="core-value-desc">Trao quyền kiến thức để bạn tự làm chủ sức khỏe lâu dài cho chính mình và người thân.</div>
+                </div>
+              </div>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px;">
+                <button type="button" class="btn btn-zalo" data-open-zalo="Trò chuyện trực tiếp cùng BS. Như Nguyện">
+                  Kết nối Zalo với Người đồng hành
+                </button>
+                <a href="#quick-check" class="btn btn-outline">
+                  Làm khảo sát thói quen 1 phút
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- MỤC 4B: HÌNH ẢNH & HOẠT ĐỘNG THỰC TẾ CỦA BS. NHƯ NGUYỆN (#activities) -->
+    <section id="activities" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">HÌNH ẢNH NGƯỜI THẬT – VIỆC THẬT</span>
+          <h2 class="section-title">Kỷ niệm Giảng đường, Rèn luyện Thể lực &amp; Đồng hành Cộng đồng</h2>
+          <p class="section-subtitle">
+            Từ những năm tháng kỷ niệm trên giảng đường Trường Cao đẳng Y tế Huế đến niềm vui chạy bộ 10km, tập luyện Pilates – Kháng lực và trò chuyện sức khỏe chủ động cùng cộng đồng.
+          </p>
+        </div>
+
+        <div class="activities-filter-bar" role="group" aria-label="Lọc hình ảnh hoạt động theo nhóm">
+          <button type="button" class="activity-filter-btn is-active" data-act-category="Tất cả">Tất cả (10 hình ảnh)</button>
+          <button type="button" class="activity-filter-btn" data-act-category="Giảng dạy Y khoa">Giảng dạy Y khoa</button>
+          <button type="button" class="activity-filter-btn" data-act-category="Chạy bộ & Marathon">Chạy bộ &amp; Marathon 10km</button>
+          <button type="button" class="activity-filter-btn" data-act-category="Thực hành Vận động">Thực hành Pilates &amp; Kháng lực</button>
+          <button type="button" class="activity-filter-btn" data-act-category="Chia sẻ Cộng đồng">Chia sẻ Sức khỏe Cộng đồng</button>
+        </div>
+
+        <div id="activitiesGrid" class="activities-grid">
+          <!-- Được render tự động từ 10 bức ảnh hoạt động thực tế của BS. Như Nguyện -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MỤC 5: CÔNG CỤ TỰ KHẢO SÁT NHANH THÓI QUEN SỐNG KHỎE (#quick-check) -->
+    <section id="quick-check" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">CÔNG CỤ TƯƠNG TÁC TRỰC TUYẾN</span>
+          <h2 class="section-title">Tự Khảo sát Nhanh 5 Thói quen Sống khỏe Hiện tại</h2>
+          <p class="section-subtitle">
+            Dành 60 giây đánh giá 5 tiêu chí nền tảng để nhận diện ưu tiên cải thiện sức khỏe chủ động của bạn (chạy hoàn toàn trên trình duyệt, bảo mật thông tin).
+          </p>
+        </div>
+
+        <div class="quick-check-card">
+          <form id="lifestyleQuizForm">
+            <div class="quiz-question-list">
+              <!-- Tiêu chí 1: Uống nước -->
+              <div class="quiz-item">
+                <div class="quiz-item-title">1. Thói quen uống nước và hydrat hóa hàng ngày của bạn?</div>
+                <div class="quiz-options-grid">
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_water" value="1" data-label="Uống nước: Hay quên, đợi khát mới uống dồn" required />
+                    <span>Hay quên uống nước, đợi thật khát mới uống dồn nhiều một lúc</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_water" value="2" data-label="Uống nước: Uống tương đối nhưng chưa đều" />
+                    <span>Có chú ý uống nước nhưng còn phụ thuộc vào đồ uống ngọt/trà đậm</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_water" value="3" data-label="Uống nước: Chia nhỏ đều đặn trong ngày" checked />
+                    <span>Chia nhỏ lượng nước uống đều đặn suốt ngày theo nhu cầu cơ thể</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Tiêu chí 2: Giấc ngủ -->
+              <div class="quiz-item">
+                <div class="quiz-item-title">2. Chất lượng giấc ngủ và nhịp sinh học buổi tối?</div>
+                <div class="quiz-options-grid">
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_sleep" value="1" data-label="Giấc ngủ: Thường thức khuya sau 23h30, khó ngủ" required />
+                    <span>Thường thức khuya sau 23h30, dùng điện thoại sát giờ ngủ, sáng dậy mệt</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_sleep" value="2" data-label="Giấc ngủ: Ngủ đủ giờ nhưng hay chập chờn" checked />
+                    <span>Ngủ khoảng 6 - 7 tiếng nhưng giấc ngủ đôi khi chưa sâu, trưa hay uể oải</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_sleep" value="3" data-label="Giấc ngủ: Ngủ đúng giờ sinh học, thức dậy tỉnh táo" />
+                    <span>Đi ngủ đúng khung giờ sinh học, ngủ sâu giấc và thức dậy sảng khoái</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Tiêu chí 3: Vận động trong tuần -->
+              <div class="quiz-item">
+                <div class="quiz-item-title">3. Tần suất vận động thể chất và rèn luyện cơ xương khớp trong tuần?</div>
+                <div class="quiz-options-grid">
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_movement" value="1" data-label="Vận động: Ngồi nhiều, ít hơn 1 buổi tập/tuần" required />
+                    <span>Ngồi làm việc liên tục nhiều giờ, hầu như ít vận động chủ động</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_movement" value="2" data-label="Vận động: Đi bộ/tập nhẹ 1-2 buổi/tuần" checked />
+                    <span>Có đi bộ hoặc tập nhẹ 1 - 2 buổi/tuần nhưng chưa có bài tập giữ cơ</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_movement" value="3" data-label="Vận động: Duy trì đều 3-5 buổi/tuần (Kháng lực/Pilates/Cardio)" />
+                    <span>Duy trì đều đặn 3 - 5 buổi/tuần kết hợp kháng lực, Pilates hoặc Cardio</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Tiêu chí 4: Bữa ăn lành mạnh -->
+              <div class="quiz-item">
+                <div class="quiz-item-title">4. Cấu trúc bữa ăn và cách phân bổ đạm (Protein) hàng ngày?</div>
+                <div class="quiz-options-grid">
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_nutrition" value="1" data-label="Dinh dưỡng: Ăn sáng qua loa nhiều tinh bột nhanh, tối ăn bù" required />
+                    <span>Ăn sáng vội vàng nhiều tinh bột tinh chế, thiếu rau xanh và lệch đạm</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_nutrition" value="2" data-label="Dinh dưỡng: Đã giảm đồ ngọt/chiên rán nhưng chưa cân đối đạm" checked />
+                    <span>Đã có ý thức giảm đồ chiên rán/nước ngọt nhưng chưa biết cân đối lượng đạm</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_nutrition" value="3" data-label="Dinh dưỡng: Ưu tiên thực phẩm toàn phần, đủ đạm và xơ" />
+                    <span>Ưu tiên thực phẩm toàn phần, phân bổ đều đạm và rau xanh ở cả 3 bữa</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Tiêu chí 5: Mức độ năng lượng & Tinh thần -->
+              <div class="quiz-item">
+                <div class="quiz-item-title">5. Mức năng lượng làm việc và khả năng kiểm soát căng thẳng trong ngày?</div>
+                <div class="quiz-options-grid">
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_energy" value="1" data-label="Năng lượng: Hay tụt năng lượng sau ăn trưa, căng thẳng kéo dài" required />
+                    <span>Hay buồn ngủ, tụt năng lượng sau bữa trưa và thường xuyên căng thẳng</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_energy" value="2" data-label="Năng lượng: Tạm ổn nhưng cuối ngày dễ đuối sức" checked />
+                    <span>Đầu ngày làm việc tốt nhưng về chiều tối thường đuối sức, thèm đồ ngọt</span>
+                  </label>
+                  <label class="quiz-option-label">
+                    <input type="radio" name="q_energy" value="3" data-label="Năng lượng: Ổn định suốt ngày, biết cách thư giãn chủ động" />
+                    <span>Năng lượng ổn định suốt ngày, biết cách hít thở và nghỉ ngắn hợp lý</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div style="text-align: center;">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Xem Kết quả Đánh giá Thói quen Sống khỏe
+              </button>
+            </div>
+          </form>
+
+          <!-- Khung hiển thị kết quả khảo sát -->
+          <div id="quizResultBox" class="quiz-result-box" aria-live="polite">
+            <span id="quizScoreBadge" class="quiz-score-badge">Điểm thói quen hiện tại: -- / 15</span>
+            <h3 id="quizFeedbackTitle" style="margin-bottom: 10px;">Đánh giá tổng quan</h3>
+            <p id="quizFeedbackDesc" style="color: var(--text-main); margin-bottom: 20px;"></p>
+            <button type="button" id="sendQuizResultZaloBtn" class="btn btn-zalo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>Gửi kết quả này qua Zalo để nhận gợi ý cải thiện</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MỤC 6: CÂU HỎI THƯỜNG GẶP (#faq) -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">GIẢI ĐÁP THẮC MẮC</span>
+          <h2 class="section-title">Câu hỏi Thường gặp về Tư vấn Sức khỏe Chủ động</h2>
+          <p class="section-subtitle">
+            Những thông tin minh bạch giúp bạn hiểu rõ phạm vi đồng hành của Y học Lối sống trước khi bắt đầu.
+          </p>
+        </div>
+
+        <div id="faqAccordionList" class="faq-list">
+          <!-- Được render tự động từ dữ liệu 5 câu hỏi thực tế -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER & TUYÊN BỐ MIỄN TRỪ TRÁCH NHIỆM Y KHOA -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title" data-config="brandName">Sống Khỏe Chủ Động Cùng BS. Như Nguyện</h3>
+          <p style="margin-bottom: 12px; color: #D1FAE5;" data-config="tagline">
+            Chăm sóc sức khỏe từ gốc – Kiến tạo lối sống khoa học mỗi ngày
+          </p>
+          <p style="font-size: 0.92rem; color: #A7F3D0;">
+            Người đồng hành: <strong data-config="specialistName">BS. Nguyễn Thị Như Nguyện</strong><br/>
+            Vai trò: <span data-config="specialistRole">Bác sĩ đồng hành Tư vấn Sức khỏe Chủ động &amp; Lối sống Khoa học</span>
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Liên kết nhanh</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Trang chủ</a></li>
+            <li><a href="#pillars">6 Trụ cột Y học Lối sống</a></li>
+            <li><a href="#services">Dịch vụ &amp; Lộ trình Đồng hành</a></li>
+            <li><a href="#articles">Góc Chuyên môn &amp; Bài viết</a></li>
+            <li><a href="#quick-check">Tự khảo sát Thói quen Sống khỏe</a></li>
+            <li><a href="#faq">Câu hỏi Thường gặp (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Thông tin Liên hệ &amp; Kết nối</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <strong>Điện thoại / Zalo:</strong>
+              <span data-config="zaloPhone">0911011355</span>
+            </li>
+            <li>
+              <strong>Email liên hệ:</strong>
+              <span data-config="email">miranhunguyen@gmail.com</span>
+            </li>
+            <li>
+              <strong>Khu vực / Hình thức:</strong>
+              <span data-config="address">Tư vấn Trực tuyến Toàn quốc &amp; Trực tiếp tại TP. Huế</span>
+            </li>
+          </ul>
+          <div style="margin-top: 16px;">
+            <button type="button" class="btn btn-zalo btn-sm" data-open-zalo="Liên hệ tư vấn từ phần Chân trang (Footer)">
+              Mở trình kết nối Zalo thông minh
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tuyên bố miễn trừ trách nhiệm Y khoa (Medical Disclaimer) -->
+      <div class="medical-disclaimer-box" role="note" aria-label="Tuyên bố miễn trừ trách nhiệm Y khoa">
+        <strong>⚕️ TUYÊN BỐ MIỄN TRỪ TRÁCH NHIỆM Y KHOA (MEDICAL DISCLAIMER):</strong>
+        Toàn bộ bài viết chuyên môn, công cụ tự khảo sát và thông tin hướng dẫn trên website này nhằm mục đích <strong>giáo dục sức khỏe chủ động và định hướng xây dựng lối sống khoa học</strong> (dinh dưỡng cân bằng, vận động thể chất an toàn, giấc ngủ sinh học và hydrat hóa hợp lý). Các nội dung này <strong>không thay thế</strong> cho việc thăm khám lâm sàng, chẩn đoán y khoa, kê đơn thuốc hay điều trị cấp cứu tại các bệnh viện và cơ sở khám chữa bệnh. Nếu bạn đang có triệu chứng bệnh lý cấp tính hoặc đang điều trị bệnh mạn tính, vui lòng tham khảo ý kiến bác sĩ chuyên khoa điều trị trực tiếp trước khi thay đổi chế độ vận động hoặc dinh dưỡng.
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <span data-config="brandName">Sống Khỏe Chủ Động Cùng BS. Như Nguyện</span>. Bảo lưu mọi quyền.
+        </div>
+        <div>
+          Thiết kế chuẩn Y học Lối sống • Tương thích GitHub Pages &amp; Thiết bị Di động
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- NÚT KẾT NỐI ZALO NỔI (FLOATING ZALO BUTTON) -->
+  <button
+    type="button"
+    class="floating-zalo-btn"
+    data-open-zalo="Tư vấn Sức khỏe Chủ động & Y học Lối sống"
+    aria-label="Mở khung kết nối tư vấn qua Zalo"
+  >
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <span>Tư vấn Zalo</span>
+  </button>
+
+  <!-- MODAL 1: CỬA SỔ ĐỌC BÀI VIẾT CHI TIẾT (ARTICLE READER MODAL) -->
+  <div id="articleModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="readerModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 id="readerModalTitle" style="font-size: 1.25rem;">Tiêu đề bài viết chuyên môn</h3>
+          <div id="readerModalMeta" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;"></div>
+        </div>
+        <button type="button" id="closeArticleModalBtn" class="modal-close-btn" aria-label="Đóng cửa sổ đọc bài viết">✕</button>
+      </div>
+
+      <div id="readerModalBody" class="modal-body">
+        <!-- Nội dung toàn văn bài viết được nạp động -->
+      </div>
+
+      <div class="modal-footer">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <button type="button" id="printArticleBtn" class="btn btn-outline btn-sm">
+            🖨️ In bài viết / Lưu PDF
+          </button>
+          <button type="button" id="readerAskZaloBtn" class="btn btn-zalo btn-sm">
+            💬 Hỏi thêm về chủ đề này qua Zalo
+          </button>
+        </div>
+        <button type="button" id="closeArticleFooterBtn" class="btn btn-primary btn-sm">
+          Đóng bài viết
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: TRÌNH KẾT NỐI ZALO THÔNG MINH (SMART ZALO CONNECTOR MODAL) -->
+  <div id="zaloModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="zaloModalTitle">
+    <div class="modal-dialog modal-dialog-sm">
+      <div class="modal-header">
+        <div>
+          <span class="section-badge" style="margin-bottom: 4px;">KẾT NỐI NHANH &amp; LỊCH SỰ</span>
+          <h3 id="zaloModalTitle" style="font-size: 1.25rem;">Gửi Yêu cầu Tư vấn qua Zalo</h3>
+        </div>
+        <button type="button" id="closeZaloModalBtn" class="modal-close-btn" aria-label="Đóng hộp thoại kết nối Zalo">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.94rem; color: var(--text-muted); margin-bottom: 16px;">
+          Chọn nội dung bạn đang quan tâm để hệ thống soạn sẵn lời nhắn rõ ràng. Khi bấm nút bên dưới, nội dung sẽ được tự động sao chép để bạn gửi ngay trên Zalo <strong data-config="zaloPhone">0911011355</strong>.
+        </p>
+
+        <div class="form-group">
+          <label for="zaloUserName" class="form-label">Tên xưng hô của bạn (Tùy chọn):</label>
+          <input type="text" id="zaloUserName" class="form-control" placeholder="VD: Chị Lan (38 tuổi, nhân viên văn phòng)" />
+        </div>
+
+        <div class="form-group">
+          <label for="zaloTopicSelect" class="form-label">Mối quan tâm chính của bạn:</label>
+          <select id="zaloTopicSelect" class="form-control">
+            <option value="Đánh giá Thói quen & Lối sống Tổng quát 1:1">Đánh giá Thói quen &amp; Lối sống Tổng quát 1:1</option>
+            <option value="Tư vấn Dinh dưỡng Cân bằng & Kiểm soát Chuyển hóa">Tư vấn Dinh dưỡng Cân bằng &amp; Kiểm soát Chuyển hóa</option>
+            <option value="Thiết kế Lộ trình Vận động Cá nhân hóa tại nhà (Kháng lực, Pilates, Bạt nhún/Cardio an toàn)">Thiết kế Lộ trình Vận động Cá nhân hóa tại nhà (Kháng lực, Pilates, Cardio)</option>
+            <option value="Đồng hành Xây dựng Nhịp sinh học, Giấc ngủ & Thói quen Sống khỏe Chủ động">Đồng hành Xây dựng Nhịp sinh học, Giấc ngủ &amp; Uống nước đúng cách</option>
+            <option value="Mối quan tâm cụ thể khác">Mối quan tâm cụ thể khác (Theo bài viết / Khảo sát)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="zaloCustomTopic" class="form-label">Tiêu đề dịch vụ / bài viết cụ thể (Tự động điền hoặc nhập thêm):</label>
+          <input type="text" id="zaloCustomTopic" class="form-control" placeholder="VD: Hỏi thêm về bài viết hoặc dịch vụ cụ thể..." />
+        </div>
+
+        <div class="form-group">
+          <label for="zaloUserNote" class="form-label">Chia sẻ ngắn về tình trạng hoặc khung giờ bạn thuận tiện trao đổi:</label>
+          <textarea id="zaloUserNote" class="form-control" rows="2" placeholder="VD: Mình muốn cải thiện giấc ngủ, giảm mỡ bụng và giữ cơ, rảnh sau 19h tối..."></textarea>
+        </div>
+
+        <div>
+          <span class="form-label">Bản xem trước tin nhắn sẽ sao chép:</span>
+          <div id="zaloMessagePreview" class="zalo-preview-box"></div>
+        </div>
+
+        <div id="zaloStatusBanner" class="zalo-status-banner" role="status" aria-live="polite"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" id="copyAndOpenZaloBtn" class="btn btn-zalo" style="width: 100%;">
+          📋 Sao chép nội dung &amp; Mở Zalo ngay
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tập tin JavaScript thực thi chính -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
